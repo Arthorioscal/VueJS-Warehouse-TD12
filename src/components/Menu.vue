@@ -1,0 +1,39 @@
+<template>
+    <v-container>
+        <v-row>
+                <v-col>
+                    <v-toolbar flat color="grey lighten-4">
+                        <v-toolbar-title>Warehouses</v-toolbar-title>
+                        <v-spacer></v-spacer>
+                            <nav>
+                                <v-btn to="/" text>Home</v-btn>
+                                <v-btn to="/warehouses" text>Registered Warehouses</v-btn>
+                                <v-btn to="/warehouses/new" text>Create new Warehouses</v-btn>
+                                <v-btn to="/about" text>About</v-btn>
+                            </nav>
+                </v-toolbar>
+                </v-col>
+            </v-row>
+    </v-container>
+</template>
+
+<script>
+export default {
+    name: 'Menu'
+}
+</script>
+
+<style>
+    nav {
+        padding: 30px;
+    }
+
+    nav a {
+    font-weight: bold;
+        color: #2c3e50;
+    }
+
+    nav a.router-link-exact-active {
+        color: #42b983;
+    }
+</style>
